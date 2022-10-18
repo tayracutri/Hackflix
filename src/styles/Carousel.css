@@ -1,0 +1,22 @@
+.carousel-item{
+    margin-top: 0;
+    height: 650px;
+    width:100%;
+}
+
+.carousel-img{
+    filter: brightness(50%);
+}
+
+.carousel-caption h2{
+    color: rgb(249, 247, 247);
+font-size: 4rem;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+@media (max-width:750px) {
+    .carousel{
+        display: none;
+    }
+}

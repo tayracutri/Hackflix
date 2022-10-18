@@ -1,0 +1,30 @@
+.movie-container{
+background-color: #18191a;
+color: #fff;
+}
+.info-container{
+    margin-top: 20%;
+    text-align: left;
+}
+.data-container{
+    margin-top: 60px;
+}
+.info-container h1 {
+    font-size: 3.6rem;
+    margin-top: 30px;
+}
+.info-container h4{
+    margin-top: 40px;
+    color: rgb(225, 222, 222);
+}
+
+.movie-text{
+    font-size: 1.3rem;
+    color: rgb(175, 12, 12);
+}
+
+
+.movie-poster{
+    margin-top: 50px;
+    width: 70%;
+}

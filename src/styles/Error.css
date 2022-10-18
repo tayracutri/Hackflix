@@ -1,0 +1,21 @@
+.error-container{
+  background-color: #212529;
+
+}
+.error-text{
+    color: #fff;
+    margin-top: 10%;
+}
+.error-text h1{
+    font-size: 4rem;
+}
+.error-text p{
+    font-size: 1.8rem;
+}
+
+.error-text span{
+    display: block;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #ffffff;
+}

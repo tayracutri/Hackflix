@@ -1,0 +1,23 @@
+  .navbar{
+    background-color: #212529;
+    color: #fff;
+    z-index: 1;
+  }
+ 
+  #navbar-title{
+    color: #E50914;
+    font-size: 2rem;
+    margin-left: 40px;
+    margin-right: 35px;
+  }
+  
+  #nav-link{
+    color: white;
+    text-decoration: none;
+  }
+  
+  #nav-link:hover{
+    color: red
+  }
+ 
+ 
