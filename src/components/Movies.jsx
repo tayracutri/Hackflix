@@ -9,6 +9,10 @@ const Movies = () => {
   const [rating, setRating] = useState(0);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
+  const [search, setSearch] = useState("");
+
+  const API_URL = "https://api.themoviedb.org/3";
+  const API_KEY = "3823fb8b06bcbb69d27ffe7192ef67e4";
 
   useEffect(() => {
     async function getMovies() {
@@ -29,12 +33,17 @@ const Movies = () => {
   }, [rating]);
 
   async function getData() {
-    const url = ` https://api.themoviedb.org/3/discover/movie/?api_key=3823fb8b06bcbb69d27ffe7192ef67e4&vote_average.gte=${
+    const type = search ? "search" : "discover";
+    const url = `${API_URL}/${type}/movie/?api_key=${API_KEY}&vote_average.gte=${
       rating * 2 - 2
     }&vote_count.gte=500&include_adult=false&page=${page}`;
 
-    const response = await axios.get(url);
-    console.log(response.data);
+    const response = await axios.get(url, {
+      params: {
+        query: search,
+      },
+    });
+    // console.log(response.data);
     return response.data;
   }
 

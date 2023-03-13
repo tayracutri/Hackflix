@@ -11,7 +11,7 @@ function NavBar() {
     <Navbar expand="lg">
       <Container fluid>
         <Navbar.Brand href="/" id="navbar-title">
-          HACKFLIX
+          TAYFLIX
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

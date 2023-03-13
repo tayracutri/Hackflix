@@ -6,6 +6,7 @@
 
 .carousel-img{
     filter: brightness(50%);
+
 }
 
 .carousel-caption h2{
@@ -15,8 +16,14 @@ font-weight: bold;
 margin-bottom: 20px;
 }
 
-@media (max-width:750px) {
+@media (max-width:1000px) {
     .carousel{
         display: none;
+    }
+}
+
+@media (max-width:1173px) {
+    .carousel-img{
+        height: 100%;
     }
 }
