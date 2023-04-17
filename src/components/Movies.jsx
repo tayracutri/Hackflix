@@ -3,13 +3,14 @@ import axios from "axios";
 import Movie from "./Movie";
 import InfiniteScroll from "react-infinite-scroll-component";
 import StarRating from "./StarRating";
+import { Navbar } from "react-bootstrap";
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [rating, setRating] = useState(0);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
 
   const API_URL = "https://api.themoviedb.org/3";
   const API_KEY = "3823fb8b06bcbb69d27ffe7192ef67e4";
@@ -32,7 +33,7 @@ const Movies = () => {
     getRating();
   }, [rating]);
 
-  async function getData() {
+  async function getData(search) {
     const type = search ? "search" : "discover";
     const url = `${API_URL}/${type}/movie/?api_key=${API_KEY}&vote_average.gte=${
       rating * 2 - 2
@@ -43,25 +44,31 @@ const Movies = () => {
         query: search,
       },
     });
-    // console.log(response.data);
     return response.data;
   }
 
+  // const searchMovies = (e) => {
+  //   e.preventDefault();
+  //   getData(search);
+  // };
   return (
-    <div>
-      <StarRating rating={rating} setRating={setRating} />
-      <InfiniteScroll
-        dataLength={movies.length}
-        hasMore={hasMore}
-        next={() => setPage((prevPage) => prevPage + 1)}
-      >
-        <div className="movies-container">
-          {movies.map((movie) => {
-            return <Movie movie={movie} key={movie.id} />;
-          })}
-        </div>
-      </InfiniteScroll>
-    </div>
+    <>
+      <Navbar />
+      <div>
+        <StarRating rating={rating} setRating={setRating} />
+        <InfiniteScroll
+          dataLength={movies.length}
+          hasMore={hasMore}
+          next={() => setPage((prevPage) => prevPage + 1)}
+        >
+          <div className="movies-container">
+            {movies.map((movie) => {
+              return <Movie movie={movie} key={movie.id} />;
+            })}
+          </div>
+        </InfiniteScroll>
+      </div>
+    </>
   );
 };
 

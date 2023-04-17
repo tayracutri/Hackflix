@@ -1,11 +1,11 @@
 import React from "react";
-import HeaderCarousel from "./Carousel";
 import Movies from "./Movies";
+import { MoviesCarousel } from "./Carousel";
 
 const Home = () => {
   return (
     <>
-      <HeaderCarousel />
+      <MoviesCarousel />
       <Movies />
     </>
   );

@@ -3,39 +3,33 @@ import Footer from "./Footer";
 import "../styles/About.css";
 const About = () => {
   return (
-    <div className="about-container">
-      <div className="container">
-        <div>
-          <h2>ABOUT US</h2>
+    <>
+      <div className="about-container">
+        <div style={{ textAlign: "left", color: "grey" }}>
+          <h2>ABOUT ME</h2>
           <hr />
-          <div className="row">
+          <div className="row" style={{ color: "#fff", fontSize: "1.2rem" }}>
             <div className="col">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus voluptatum tempora animi nemo harum pariatur
-                praesentium molestias nisi quos quam sint atque placeat, ad sed
-                a reiciendis, aperiam amet deleniti! Nisi non ex nemo quibusdam
-                soluta voluptate, quia, doloremque unde nesciunt iusto porro
-                mollitia voluptatem sed distinctio.
+                Hi! I'm Tayra. I'm 19 years old and I'm a Fullstack Developer
+                Jr. I build this app in a Coding Bootcamp. I love programming
+                and I try to do my best in every project. You can go to the
+                Contact section and get know me better.
               </p>
             </div>
             <div className="col">
               <p>
-                Cupiditate culpa a laborum quia tempora iste corporis, veniam
-                totam fuga error doloremque repellendus tenetur labore maiores
-                nesciunt voluptates dolores nostrum blanditiis, nisi ipsam
-                possimus unde architecto. Ut, cum sed? Deserunt eveniet nobis
-                consectetur perspiciatis architecto ipsum voluptatibus ab, odio
-                doloremque natus, nostrum assumenda distinctio ducimus
-                repellendus atque tempore at asperiores. Rem eius corporis
-                soluta voluptatum voluptate reiciendis esse ut?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                suscipit eligendi debitis veritatis hic corporis magni nostrum
+                nobis accusamus vero, voluptatum ratione eveniet necessitatibus
+                ad aspernatur perspiciatis dolorum odio consectetur!
               </p>
             </div>
           </div>
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

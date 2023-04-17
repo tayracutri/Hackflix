@@ -8,7 +8,7 @@ export default function Footer() {
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)", fontSize: "1.2rem" }}
       >
-        Hackflix © Hack Academy | Tayra Cutri | 2022
+        Hackflix © Hack Academy | Tayra Cutri | 2023
       </div>
     </MDBFooter>
   );

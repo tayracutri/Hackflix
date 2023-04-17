@@ -1,35 +1,45 @@
 import React from "react";
 import Footer from "./Footer";
+import "../styles/About.css";
 
 const Contact = () => {
   return (
     <>
       <div className="about-container">
         <div style={{ textAlign: "left", color: "grey" }}>
-          <h2>CONTACT US</h2>
+          <h2>CONTACT ME</h2>
           <hr />
           <div className="row" style={{ color: "#fff", fontSize: "1.2rem" }}>
             <div className="col">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellendus voluptatum tempora animi nemo harum pariatur
-                praesentium molestias nisi quos quam sint atque placeat, ad sed
-                a reiciendis, aperiam amet deleniti! Nisi non ex nemo quibusdam
-                soluta voluptate, quia, doloremque unde nesciunt iusto porro
-                mollitia voluptatem sed distinctio.
+                You can find me on{" "}
+                <a
+                  href="https://www.linkedin.com/in/tayracutri/"
+                  target="blank"
+                >
+                  LinkedIn
+                </a>{" "}
+                and take a look to my CV and recent activity. Also you can surf
+                trough my{" "}
+                <a
+                  href="https://tayracutri-portfolio.vercel.app/"
+                  target="blank"
+                >
+                  online portfolio
+                </a>{" "}
+                online portfolio. My CV is summarise there! And last but not
+                least you can find me on my{" "}
+                <a href="https://github.com/tayracutri" target="blank">
+                  GitHub
+                </a>{" "}
+                and take a look to my latest projects.
               </p>
             </div>
             <div className="col">
-              <p>
-                Cupiditate culpa a laborum quia tempora iste corporis, veniam
-                totam fuga error doloremque repellendus tenetur labore maiores
-                nesciunt voluptates dolores nostrum blanditiis, nisi ipsam
-                possimus unde architecto. Ut, cum sed? Deserunt eveniet nobis
-                consectetur perspiciatis architecto ipsum voluptatibus ab, odio
-                doloremque natus, nostrum assumenda distinctio ducimus
-                repellendus atque tempore at asperiores. Rem eius corporis
-                soluta voluptatum voluptate reiciendis esse ut?
-              </p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              dolorem commodi ipsam obcaecati rem reiciendis suscipit,
+              doloremque recusandae consectetur laboriosam dignissimos esse.
+              Quae fugiat optio animi. At aliquam consequatur aspernatur!
             </div>
           </div>
         </div>

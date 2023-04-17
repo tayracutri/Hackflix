@@ -1,10 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
-import { Button } from "react-bootstrap";
 
 function NavBar() {
   return (
@@ -36,15 +34,14 @@ function NavBar() {
               </Link>
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search by title"
-              className="me-2"
-              aria-label="Search"
+          {/* <form onSubmit={searchMovies}>
+            <input
+              type="text"
+              placeholder="search"
+              onChange={(e) => setSearch(e.target.value)}
             />
-            <Button variant="outline-light">Search</Button>
-          </Form>
+            <button>Search movie</button>
+          </form> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import "../styles/Carousel.css";
 
-function HeaderCarousel() {
+export const MoviesCarousel = () => {
   return (
     <>
       <Carousel>
@@ -71,6 +71,4 @@ function HeaderCarousel() {
       </Carousel>
     </>
   );
-}
-
-export default HeaderCarousel;
+};

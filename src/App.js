@@ -2,7 +2,6 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
 import MovieDetails from "./components/MovieDetails";
-import StarRating from "./components/StarRating";
 import Home from "./components/Home";
 import Title from "./components/Title";
 import About from "./components/About";
